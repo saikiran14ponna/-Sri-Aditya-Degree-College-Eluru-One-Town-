@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sri Aditya Degree College - Admission Enquiry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 Sri Aditya Degree College</h1>
+    <h2 style="text-align:center; margin-bottom:30px; font-size:18px; opacity:0.9;">Admission Enquiry Form</h2>
+    <form id="enquiryForm">
+      <div class="form-group">
+        <label for="name">👤 Student Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">📧 Email ID</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">📱 Mobile Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" required />
+      </div>
+      <div class="form-group">
+        <label for="group">🎯 Choose Group / Course</label>
+        <select id="group" name="group" required>
+          <option value="">Select group</option>
+          <option value="BSC-AIR">BSC-AIR</option>
+          <option value="BSC-CS">BSC-CS</option>
+          <option value="BSC-DS">BSC-DS</option>
+          <option value="BCA">BCA</option>
+          <option value="BCA-DS">BCA-DS</option>
+          <option value="BBA-DM">BBA-DM</option>
+          <option value="B.com-CA">B.com-CA</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="referredBy">📝 Referred By</label>
+        <input type="text" id="referredBy" name="referredBy" placeholder="Enter who referred you " />
+      </div>
+      <div class="form-group">
+        <label for="message">💬 Your Query</label>
+        <textarea id="message" name="message" placeholder="Ask about fees, hostel, scholarships, etc."></textarea>
+      </div>
+      <button type="submit">🚀 Submit Enquiry</button>
+    </form>
+    <div id="successMsg">✅ Thank you! Your enquiry is ready in WhatsApp. Check your phone!</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
